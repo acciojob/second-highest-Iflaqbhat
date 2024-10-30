@@ -14,7 +14,7 @@
             } else if (arr.every(element => element === arr[0])) {
                 return -Infinity; // Return -Infinity if all elements are the same
             } else {
-                arr = arr.sort((a, b) => b - a); // Sort the array in descending order
+                arr = arr.sort((a, b) => a - b); // Sort the array in asscending order
                 return arr[1]; // Return the second highest element
             }
         }
@@ -23,8 +23,9 @@
             var n = parseInt(prompt("Enter the number of elements"), 10);
             var arr = [];
             for (var i = 0; i < n; i++) {
-                arr[i] = prompt("Enter element " + (i + 1));
+                 arr[i] = prompt("Enter element " + (i + 1));
             }
+			
             alert(secondHighest(arr));
         }
 
